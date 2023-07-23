@@ -1,0 +1,15 @@
+apiVersion: v2
+name: ingress-controller-managed
+description: A Helm chart for Kubernetes Ingress Controller multiples charts
+type: application
+version: 0.1.0
+dependencies:
+  - name: ingress-controller-aws
+    version: 0.1.0
+    repository: file://ingress-controller-aws
+    condition: ingress-controller-aws.enabled
+  - name: ingress-controller-gcp
+    version: 0.1.0
+    repository: file://ingress-controller-gcp
+    alias: gcp
+    condition: ingress-controller-gcp.enabled

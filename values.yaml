@@ -1,0 +1,21 @@
+global: {}
+
+ingress-controller-aws:
+  enabled: true
+
+  ingress-nginx-aws:
+    enabled: true
+
+    controller:
+      image:
+        image: example-aws
+
+gcp:
+  enabled: true
+
+  ingress-nginx-gcp:
+    enabled: true
+
+    controller:
+      image:
+        image: example-gcp

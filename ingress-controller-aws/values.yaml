@@ -1,0 +1,4 @@
+global: {}
+
+ingress-nginx-aws:
+  enabled: true

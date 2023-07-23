@@ -1,0 +1,9 @@
+dependencies:
+- name: ingress-controller-aws
+  repository: file://ingress-controller-aws
+  version: 0.1.0
+- name: ingress-controller-gcp
+  repository: file://ingress-controller-gcp
+  version: 0.1.0
+digest: sha256:c1d72865d2cf29f1974537678c246c01b3ac877cce8d71ec2d1a545e3132dad4
+generated: "2023-07-22T23:48:25.657113488-03:00"
